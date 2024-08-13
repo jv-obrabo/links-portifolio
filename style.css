@@ -6,7 +6,7 @@
 
 :root {
   --text-color: white;
-  --bg-url: linear-gradient(43deg, #270136fb, #0B101Efb, #270135fb,#270135fb);
+  --bg-url: linear-gradient(43deg, #270136fb, #0b101efb, #270135fb, #270135fb);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -16,7 +16,7 @@
 
 .light {
   --text-color: black;
-  --bg-url: linear-gradient(43deg,#CDC9F1,#FDFDFD,#FFFFFF,#9D93D6);
+  --bg-url: linear-gradient(43deg, #cdc9f1, #fdfdfd, #ffffff, #9d93d6);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
@@ -25,13 +25,7 @@
 }
 
 body {
-  /*
-    background: var(./assets/bg-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-  */
-  background: var(--bg-url) no-repeat top center/cover;
+  background: var(--bg-url);
 }
 
 body * {
@@ -43,7 +37,7 @@ body * {
   width: 100vw;
   height: 100vh;
   max-width: 700px;
-  margin:  auto;
+  margin: auto;
   padding: 0 24px;
 }
 
@@ -159,6 +153,16 @@ ul li a ion-icon {
   margin-right: 15px;
 }
 
+ul li a:hover ion-icon {
+  fill: var(--stroke-color);
+}
+
+ul li a ion-icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
 /* social links */
 #social-links {
   display: flex;
@@ -200,13 +204,11 @@ footer a:hover {
 /* media queries */
 @media (min-width: 768px) {
   :root {
-
     ul li a ion-icon {
       width: 25px;
       height: 25px;
     }
   }
-
 }
 
 /* animation */

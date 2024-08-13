@@ -9,7 +9,7 @@ function toggleMode() {
   if (html.classList.contains("light")) {
     // se tiver light mode, adicionar a imagem light
     img.setAttribute("src", "./assets/avatar-light.jpg");
-   img.setAttribute("alt", "foto do goku,fundo azul claro e escuro");
+    img.setAttribute("alt", "foto do goku,fundo azul claro e escuro");
   } else {
     // set tiver sem light mode, manter a imagem normal
     img.setAttribute("src", "./assets/avatar.webp");
